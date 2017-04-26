@@ -333,15 +333,15 @@ void Mesh::drawInternal(Int count, Int baseVertex, Int instanceCount, GLintptr i
         } else if(baseVertex) {
             #ifndef MAGNUM_TARGET_GLES
             /* Indexed mesh with base vertex and base instance */
-            if(baseInstance)
+            if(baseInstance) {
                 glDrawElementsInstancedBaseVertexBaseInstance(GLenum(_primitive), count, GLenum(_indexType), reinterpret_cast<GLvoid*>(indexOffset), instanceCount, baseVertex, baseInstance);
 
             /* Indexed mesh with base vertex */
-            else
-                glDrawElementsInstancedBaseVertex(GLenum(_primitive), count, GLenum(_indexType), reinterpret_cast<GLvoid*>(indexOffset), instanceCount, baseVertex);
-            #else
-            CORRADE_ASSERT(false, "Mesh::draw(): desktop OpenGL is required for base vertex specification in indexed meshes", );
+            } else
             #endif
+            {
+                glDrawElementsInstancedBaseVertex(GLenum(_primitive), count, GLenum(_indexType), reinterpret_cast<GLvoid*>(indexOffset), instanceCount, baseVertex);
+            }
 
         /* Indexed mesh */
         } else {
