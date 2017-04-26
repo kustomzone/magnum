@@ -103,6 +103,10 @@ or desktop OpenGL.
 
 The following symbols are not defined when targeting OpenGL ES 2.0.
 
+@page requires-gles32 Functionality requiring OpenGL ES 3.2
+
+The following symbols are not defined when targeting OpenGL ES 2.0.
+
 @page requires-es-extension Functionality requiring specific OpenGL ES extension
 
 @page requires-gles Functionality requiring OpenGL ES or desktop OpenGL
