@@ -88,8 +88,13 @@ namespace {
         /* NaCl advertises some additional extensions but the GLESv2 library
            does not have any entrypoints for them and there is no GetProcAddress
            equivalent, thus marking them as unsupported. */
-        "nacl-missing-extension-entrypoints"
+        "nacl-missing-extension-entrypoints",
         #endif
+
+        /* SVGA3D (VMware host GL driver) glDrawArrays() draws nothing when the
+           vertex buffer memory is initialized using glNamedBufferData() from
+           ARB_DSA. Using the non-DSA glBufferData() works. */
+        "svga3d-broken-dsa-bufferdata",
     };
 }
 
