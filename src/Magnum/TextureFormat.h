@@ -1067,7 +1067,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
@@ -1081,7 +1081,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
@@ -1095,7 +1095,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
@@ -1109,7 +1109,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
@@ -1123,7 +1123,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
@@ -1137,7 +1137,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
@@ -1151,7 +1151,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
@@ -1165,7 +1165,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
@@ -1179,7 +1179,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
@@ -1193,7 +1193,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
@@ -1207,7 +1207,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
@@ -1221,7 +1221,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
@@ -1235,7 +1235,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
@@ -1249,7 +1249,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
@@ -1263,7 +1263,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
@@ -1277,7 +1277,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
@@ -1291,7 +1291,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
@@ -1305,7 +1305,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
@@ -1319,7 +1319,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
@@ -1333,7 +1333,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
@@ -1347,7 +1347,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
@@ -1361,7 +1361,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
@@ -1375,7 +1375,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
@@ -1389,7 +1389,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
@@ -1403,7 +1403,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
@@ -1417,7 +1417,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
@@ -1431,7 +1431,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
@@ -1445,7 +1445,7 @@ enum class TextureFormat: GLenum {
      * @requires_extension Extension @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_extension Extension @extension{KHR,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
-     * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+     * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
      *      @extension2{KHR,texture_compression_astc_ldr,texture_compression_astc_hdr}
      * @requires_es_extension Extension @extension2{KHR,texture_compression_astc_hdr,texture_compression_astc_hdr}
      *      for 3D textures and HDR profile
