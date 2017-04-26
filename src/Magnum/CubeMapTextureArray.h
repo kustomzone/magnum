@@ -321,7 +321,7 @@ class MAGNUM_EXPORT CubeMapTextureArray: public AbstractTexture {
          *
          * See @ref Texture::setBorderColor(const Color4&) for more
          * information.
-         * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+         * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
          *      @extension{EXT,texture_border_clamp} or
          *      @extension{NV,texture_border_clamp}
          */
@@ -337,7 +337,7 @@ class MAGNUM_EXPORT CubeMapTextureArray: public AbstractTexture {
          * See @ref Texture::setBorderColor(const Vector4ui&) for more
          * information.
          * @requires_gl30 Extension @extension{EXT,texture_integer}
-         * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+         * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
          *      @extension{EXT,texture_border_clamp}
          */
         CubeMapTextureArray& setBorderColor(const Vector4ui& color) {
@@ -347,7 +347,7 @@ class MAGNUM_EXPORT CubeMapTextureArray: public AbstractTexture {
 
         /** @overload
          * @requires_gl30 Extension @extension{EXT,texture_integer}
-         * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+         * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
          *      @extension{EXT,texture_border_clamp}
          */
         CubeMapTextureArray& setBorderColor(const Vector4i& color) {
