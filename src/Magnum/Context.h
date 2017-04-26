@@ -251,7 +251,17 @@ class MAGNUM_EXPORT Context {
              * specification explicitly disallows exposing driver information
              * to the application, this check cannot be done reliably.
              */
-            ProbablyAngle = 1 << 4
+            ProbablyAngle = 1 << 4,
+            #endif
+
+            #ifndef MAGNUM_TARGET_WEBGL
+            /**
+             * VMware guest GL driver implemented using Mesa. See
+             * https://www.mesa3d.org/vmware-guest.html for more information.
+             * @requires_gles Not detectable on WebGL, as browsers
+             *      intentionally hide most of the driver information.
+             */
+            SVGA3D = 1 << 5
             #endif
         };
 

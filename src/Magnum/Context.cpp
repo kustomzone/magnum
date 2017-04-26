@@ -901,6 +901,9 @@ Debug& operator<<(Debug& debug, const Context::DetectedDriver value) {
         #ifdef MAGNUM_TARGET_GLES
         _c(ProbablyAngle)
         #endif
+        #ifndef MAGNUM_TARGET_WEBGL
+        _c(SVGA3D)
+        #endif
         #undef _c
         /* LCOV_EXCL_STOP */
     }
@@ -917,7 +920,10 @@ Debug& operator<<(Debug& debug, const Context::DetectedDrivers value) {
         Context::DetectedDriver::NVidia,
         #endif
         #ifdef MAGNUM_TARGET_GLES
-        Context::DetectedDriver::ProbablyAngle
+        Context::DetectedDriver::ProbablyAngle,
+        #endif
+        #ifndef MAGNUM_TARGET_WEBGL
+        Context::DetectedDriver::SVGA3D
         #endif
     });
 }

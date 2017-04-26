@@ -130,6 +130,7 @@ auto Context::detectedDriver() -> DetectedDrivers {
 
     _detectedDrivers = DetectedDrivers{};
 
+    const std::string renderer = rendererString();
     const std::string vendor = vendorString();
     const std::string version = versionString();
 
@@ -147,8 +148,14 @@ auto Context::detectedDriver() -> DetectedDrivers {
 
     #ifdef CORRADE_TARGET_UNIX
     /* Mesa drivers */
-    if(version.find("Mesa") != std::string::npos)
-        return *_detectedDrivers |= DetectedDriver::Mesa;
+    if(version.find("Mesa") != std::string::npos) {
+        *_detectedDrivers |= DetectedDriver::Mesa;
+
+        if(renderer.find("SVGA3D") != std::string::npos)
+            *_detectedDrivers |= DetectedDriver::SVGA3D;
+
+        return *_detectedDrivers;
+    }
     #endif
 
     if(vendor.find("NVIDIA Corporation") != std::string::npos)
