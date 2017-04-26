@@ -646,7 +646,7 @@ Debug& operator<<(Debug& debug, Buffer::TargetHint value) {
         _c(ShaderStorage)
         #endif
         #endif
-        #ifndef MAGNUM_TARGET_GLES
+        #if !defined(MAGNUM_TARGET_GLES2) && !defined(MAGNUM_TARGET_WEBGL)
         _c(Texture)
         #endif
         #ifndef MAGNUM_TARGET_GLES2
@@ -694,7 +694,7 @@ Debug& operator<<(Debug& debug, Buffer::Target value) {
         case Buffer::Target::PixelPack:
         case Buffer::Target::PixelUnpack:
         #endif
-        #ifndef MAGNUM_TARGET_GLES
+        #if !defined(MAGNUM_TARGET_GLES2) && !defined(MAGNUM_TARGET_WEBGL)
         case Buffer::Target::Texture:
         #endif
         #ifndef MAGNUM_TARGET_GLES2
