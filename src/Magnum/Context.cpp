@@ -882,9 +882,7 @@ Debug& operator<<(Debug& debug, const Context::Flag value) {
         #define _c(value) case Context::Flag::value: return debug << "Context::Flag::" #value;
         _c(Debug)
         _c(NoError)
-        #ifndef MAGNUM_TARGET_GLES
         _c(RobustAccess)
-        #endif
         #undef _c
         /* LCOV_EXCL_STOP */
     }
@@ -896,9 +894,7 @@ Debug& operator<<(Debug& debug, const Context::Flags value) {
     return Containers::enumSetDebugOutput(debug, value, "Context::Flags{}", {
         Context::Flag::Debug,
         Context::Flag::NoError,
-        #ifndef MAGNUM_TARGET_GLES
         Context::Flag::RobustAccess
-        #endif
     });
 }
 

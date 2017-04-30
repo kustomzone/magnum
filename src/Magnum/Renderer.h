@@ -104,30 +104,22 @@ class MAGNUM_EXPORT Renderer {
              * @see @ref DebugOutput, @ref Feature::DebugOutputSynchronous,
              *      @ref Platform::Sdl2Application::Configuration::Flag::Debug "Platform::*Application::Configuration::Flag::Debug"
              * @requires_gl43 Extension @extension{KHR,debug}
-             * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+             * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
              *      @extension2{KHR,debug,debug}
              * @requires_gles Debug output is not available in WebGL.
              */
-            #ifndef MAGNUM_TARGET_GLES
             DebugOutput = GL_DEBUG_OUTPUT,
-            #else
-            DebugOutput = GL_DEBUG_OUTPUT_KHR,
-            #endif
 
             /**
              * Synchronous debug output. Has effect only if
              * @ref Feature::DebugOutput is enabled.
              * @see @ref DebugMessage
              * @requires_gl43 Extension @extension{KHR,debug}
-             * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+             * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
              *      @extension2{KHR,debug,debug}
              * @requires_gles Debug output is not available in WebGL.
              */
-            #ifndef MAGNUM_TARGET_GLES
             DebugOutputSynchronous = GL_DEBUG_OUTPUT_SYNCHRONOUS,
-            #else
-            DebugOutputSynchronous = GL_DEBUG_OUTPUT_SYNCHRONOUS_KHR,
-            #endif
             #endif
 
             #ifndef MAGNUM_TARGET_GLES
@@ -1409,29 +1401,21 @@ class MAGNUM_EXPORT Renderer {
              * Given operation would cause an internal stack to underflow.
              * @see @ref DebugGroup
              * @requires_gl43 Extension @extension{KHR,debug}
-             * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+             * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
              *      @extension2{KHR,debug,debug}
              * @requires_gles Debug output is not available in WebGL.
              */
-            #ifndef MAGNUM_TARGET_GLES
             StackUnderflow = GL_STACK_UNDERFLOW,
-            #else
-            StackUnderflow = GL_STACK_UNDERFLOW_KHR,
-            #endif
 
             /**
              * Given operation would cause an internal stack to overflow.
              * @see @ref DebugGroup
              * @requires_gl43 Extension @extension{KHR,debug}
-             * @requires_es_extension Extension @extension{ANDROID,extension_pack_es31a}/
+             * @requires_gles32 Extension @extension{ANDROID,extension_pack_es31a}/
              *      @extension2{KHR,debug,debug}
              * @requires_gles Debug output is not available in WebGL.
              */
-            #ifndef MAGNUM_TARGET_GLES
             StackOverflow = GL_STACK_OVERFLOW
-            #else
-            StackOverflow = GL_STACK_OVERFLOW_KHR
-            #endif
             #endif
         };
 

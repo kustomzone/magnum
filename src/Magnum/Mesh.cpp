@@ -209,20 +209,12 @@ inline void Mesh::createIfNotAlready() {
 #ifndef MAGNUM_TARGET_WEBGL
 std::string Mesh::label() {
     createIfNotAlready();
-    #ifndef MAGNUM_TARGET_GLES
     return Context::current().state().debug->getLabelImplementation(GL_VERTEX_ARRAY, _id);
-    #else
-    return Context::current().state().debug->getLabelImplementation(GL_VERTEX_ARRAY_KHR, _id);
-    #endif
 }
 
 Mesh& Mesh::setLabelInternal(const Containers::ArrayView<const char> label) {
     createIfNotAlready();
-    #ifndef MAGNUM_TARGET_GLES
     Context::current().state().debug->labelImplementation(GL_VERTEX_ARRAY, _id, label);
-    #else
-    Context::current().state().debug->labelImplementation(GL_VERTEX_ARRAY_KHR, _id, label);
-    #endif
     return *this;
 }
 #endif
@@ -682,14 +674,14 @@ Debug& operator<<(Debug& debug, MeshPrimitive value) {
         _c(LineStrip)
         _c(LineLoop)
         _c(Lines)
-        #ifndef MAGNUM_TARGET_GLES
+        #ifndef MAGNUM_TARGET_GLES2
         _c(LineStripAdjacency)
         _c(LinesAdjacency)
         #endif
         _c(TriangleStrip)
         _c(TriangleFan)
         _c(Triangles)
-        #ifndef MAGNUM_TARGET_GLES
+        #ifndef MAGNUM_TARGET_GLES2
         _c(TriangleStripAdjacency)
         _c(TrianglesAdjacency)
         _c(Patches)
@@ -727,14 +719,14 @@ std::string ConfigurationValue<Magnum::MeshPrimitive>::toString(Magnum::MeshPrim
         _c(LineStrip)
         _c(LineLoop)
         _c(Lines)
-        #ifndef MAGNUM_TARGET_GLES
+        #ifndef MAGNUM_TARGET_GLES2
         _c(LineStripAdjacency)
         _c(LinesAdjacency)
         #endif
         _c(TriangleStrip)
         _c(TriangleFan)
         _c(Triangles)
-        #ifndef MAGNUM_TARGET_GLES
+        #ifndef MAGNUM_TARGET_GLES2
         _c(TriangleStripAdjacency)
         _c(TrianglesAdjacency)
         _c(Patches)
@@ -750,14 +742,14 @@ Magnum::MeshPrimitive ConfigurationValue<Magnum::MeshPrimitive>::fromString(cons
     _c(LineStrip)
     _c(LineLoop)
     _c(Lines)
-    #ifndef MAGNUM_TARGET_GLES
+    #ifndef MAGNUM_TARGET_GLES2
     _c(LineStripAdjacency)
     _c(LinesAdjacency)
     #endif
     _c(TriangleStrip)
     _c(TriangleFan)
     _c(Triangles)
-    #ifndef MAGNUM_TARGET_GLES
+    #ifndef MAGNUM_TARGET_GLES2
     _c(TriangleStripAdjacency)
     _c(TrianglesAdjacency)
     _c(Patches)

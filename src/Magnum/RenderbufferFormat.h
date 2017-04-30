@@ -332,52 +332,82 @@ enum class RenderbufferFormat: GLenum {
     RGBA32I = GL_RGBA32I,
     #endif
 
-    #ifndef MAGNUM_TARGET_GLES
     /**
      * Red component, half float.
      * @requires_gl30 Extension @extension{ARB,texture_float}
-     * @requires_gl Only (non)normalized integral formats are available in
-     *      OpenGL ES and WebGL.
+     * @requires_gles32 Extension @extension{EXT,color_buffer_half_float}. Use
+     *      @ref RenderbufferFormat::R16UI or @ref RenderbufferFormat::R16I
+     *      instead if not available.
+     * @requires_webgl_extension Extension @extension{EXT,color_buffer_float}
+     *      in WebGL 1.0 and 2.0 or @extension{EXT,color_buffer_half_float} in
+     *      WebGL 2.0. Use @ref RenderbufferFormat::R16UI or
+     *      @ref RenderbufferFormat::R16I instead if not available.
      */
     R16F = GL_R16F,
 
     /**
      * Red and green component, each half float.
      * @requires_gl30 Extension @extension{ARB,texture_float}
-     * @requires_gl Only (non)normalized integral formats are available in
-     *      OpenGL ES and WebGL.
+     * @requires_gles32 Extension @extension{EXT,color_buffer_half_float}. Use
+     *      @ref RenderbufferFormat::RG16UI or @ref RenderbufferFormat::RG16I
+     *      instead if not available.
+     * @requires_webgl_extension Extension @extension{EXT,color_buffer_float}
+     *      in WebGL 1.0 and 2.0 or @extension{EXT,color_buffer_half_float} in
+     *      WebGL 2.0. Use @ref RenderbufferFormat::RG16UI or
+     *      @ref RenderbufferFormat::RG16I instead if not available.
      */
     RG16F = GL_RG16F,
 
     /**
      * RGBA, each component half float.
      * @requires_gl30 Extension @extension{ARB,texture_float}
-     * @requires_gl Only (non)normalized integral formats are available in
-     *      OpenGL ES and WebGL.
+     * @requires_gles32 Extension @extension{EXT,color_buffer_half_float}. Use
+     *      @ref RenderbufferFormat::RGBA16UI or @ref RenderbufferFormat::RGBA16I
+     *      instead if not available.
+     * @requires_webgl_extension Extension @extension{EXT,color_buffer_float}
+     *      in WebGL 1.0 and 2.0 or @extension{EXT,color_buffer_half_float} in
+     *      WebGL 2.0. Use @ref RenderbufferFormat::RGBA16UI or
+     *      @ref RenderbufferFormat::RGBA16I instead if not available.
      */
     RGBA16F = GL_RGBA16F,
 
+    #if !defined(MAGNUM_TARGET_GLES2) || defined(MAGNUM_TARGET_WEBGL)
     /**
      * Red component, float.
      * @requires_gl30 Extension @extension{ARB,texture_float}
-     * @requires_gl Only (non)normalized integral formats are available in
-     *      OpenGL ES and WebGL.
+     * @requires_gles30 Not defined in OpenGL ES 2.0.
+     * @requires_gles32 Extension @extension{EXT,color_buffer_float}. Use
+     *      @ref RenderbufferFormat::R32UI or @ref RenderbufferFormat::R32I
+     *      instead if not available.
+     * @requires_webgl_extension Extension @extension{EXT,color_buffer_float}
+     *      in WebGL 1.0 and 2.0 or @extension{WEBGL,color_buffer_float} in
+     *      WebGL 2.0. Use @ref RenderbufferFormat::R32UI or
+     *      @ref RenderbufferFormat::R32I instead if not available.
      */
     R32F = GL_R32F,
 
     /**
      * Red and green component, each float.
      * @requires_gl30 Extension @extension{ARB,texture_float}
-     * @requires_gl Only (non)normalized integral formats are available in
-     *      OpenGL ES and WebGL.
+     * @requires_gles30 Not defined in OpenGL ES 2.0.
+     * @requires_gles32 Extension @extension{EXT,color_buffer_float}. Use
+     *      @ref RenderbufferFormat::RG32UI or @ref RenderbufferFormat::RG32I
+     *      instead if not available.
+     * @requires_webgl_extension Extension @extension{EXT,color_buffer_float}
+     *      in WebGL 1.0 and 2.0 or @extension{WEBGL,color_buffer_float} in
+     *      WebGL 2.0. Use @ref RenderbufferFormat::RG32UI or
+     *      @ref RenderbufferFormat::RG32I instead if not available.
      */
     RG32F = GL_RG32F,
 
     /**
      * RGBA, each component float.
      * @requires_gl30 Extension @extension{ARB,texture_float}
-     * @requires_gl Only (non)normalized integral formats are available in
-     *      OpenGL ES and WebGL.
+     * @requires_gles30 Not defined in OpenGL ES 2.0.
+     * @requires_gles32 Extension @extension{EXT,color_buffer_float}
+     * @requires_webgl_extension Extension @extension{EXT,color_buffer_float}
+     *      in either WebGL 1 or 2 or @extension{WEBGL,color_buffer_float}
+     *      in WebGL 1
      */
     RGBA32F = GL_RGBA32F,
     #endif

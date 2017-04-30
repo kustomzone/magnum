@@ -128,13 +128,8 @@ Int DebugOutput::maxLoggedMessages() {
 
     GLint& value = Context::current().state().debug->maxLoggedMessages;
 
-    if(value == 0) {
-        #ifndef MAGNUM_TARGET_GLES
+    if(value == 0)
         glGetIntegerv(GL_MAX_DEBUG_LOGGED_MESSAGES, &value);
-        #else
-        glGetIntegerv(GL_MAX_DEBUG_LOGGED_MESSAGES_KHR, &value);
-        #endif
-    }
 
     return value;
 }
@@ -145,13 +140,8 @@ Int DebugOutput::maxMessageLength() {
 
     GLint& value = Context::current().state().debug->maxMessageLength;
 
-    if(value == 0) {
-        #ifndef MAGNUM_TARGET_GLES
+    if(value == 0)
         glGetIntegerv(GL_MAX_DEBUG_MESSAGE_LENGTH, &value);
-        #else
-        glGetIntegerv(GL_MAX_DEBUG_MESSAGE_LENGTH_KHR, &value);
-        #endif
-    }
 
     return value;
 }
@@ -366,13 +356,8 @@ Int DebugGroup::maxStackDepth() {
 
     GLint& value = Context::current().state().debug->maxStackDepth;
 
-    if(value == 0) {
-        #ifndef MAGNUM_TARGET_GLES
+    if(value == 0)
         glGetIntegerv(GL_MAX_DEBUG_GROUP_STACK_DEPTH, &value);
-        #else
-        glGetIntegerv(GL_MAX_DEBUG_GROUP_STACK_DEPTH_KHR, &value);
-        #endif
-    }
 
     return value;
 }

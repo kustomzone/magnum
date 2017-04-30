@@ -43,47 +43,17 @@ namespace Magnum {
 namespace {
     inline GLenum extTypeFromKhrIdentifier(GLenum khrIdentifier) {
         switch(khrIdentifier) {
-            #ifndef MAGNUM_TARGET_GLES
             case GL_BUFFER:
-            #else
-            case GL_BUFFER_KHR:
-            #endif
                 return GL_BUFFER_OBJECT_EXT;
-
-            #ifndef MAGNUM_TARGET_GLES
             case GL_SHADER:
-            #else
-            case GL_SHADER_KHR:
-            #endif
                 return GL_SHADER_OBJECT_EXT;
-
-            #ifndef MAGNUM_TARGET_GLES
             case GL_PROGRAM:
-            #else
-            case GL_PROGRAM_KHR:
-            #endif
                 return GL_PROGRAM_OBJECT_EXT;
-
-            #ifndef MAGNUM_TARGET_GLES
             case GL_VERTEX_ARRAY:
-            #else
-            case GL_VERTEX_ARRAY_KHR:
-            #endif
                 return GL_VERTEX_ARRAY_OBJECT_EXT;
-
-            #ifndef MAGNUM_TARGET_GLES
             case GL_QUERY:
-            #else
-            case GL_QUERY_KHR:
-            #endif
                 return GL_QUERY_OBJECT_EXT;
-
-            /** @todo Why isn't `GL_PROGRAM_PIPELINE_KHR` in ES's KHR_debug? */
-            #ifndef MAGNUM_TARGET_GLES
             case GL_PROGRAM_PIPELINE:
-            #else
-            case 0x82E4: //GL_PROGRAM_PIPELINE_KHR:
-            #endif
                 return GL_PROGRAM_PIPELINE_OBJECT_EXT;
 
             /**
@@ -96,11 +66,7 @@ namespace {
             #ifndef CORRADE_TARGET_NACL
             case GL_TRANSFORM_FEEDBACK:
             #endif
-            #ifndef MAGNUM_TARGET_GLES
             case GL_SAMPLER:
-            #else
-            case GL_SAMPLER_KHR:
-            #endif
             case GL_TEXTURE:
             case GL_RENDERBUFFER:
             case GL_FRAMEBUFFER:
@@ -118,13 +84,8 @@ Int AbstractObject::maxLabelLength() {
 
     GLint& value = Context::current().state().debug->maxLabelLength;
 
-    if(value == 0) {
-        #ifndef MAGNUM_TARGET_GLES
+    if(value == 0)
         glGetIntegerv(GL_MAX_LABEL_LENGTH, &value);
-        #else
-        glGetIntegerv(GL_MAX_LABEL_LENGTH_KHR, &value);
-        #endif
-    }
 
     return value;
 }

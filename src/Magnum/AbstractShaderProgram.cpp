@@ -301,19 +301,11 @@ AbstractShaderProgram& AbstractShaderProgram::operator=(AbstractShaderProgram&& 
 
 #ifndef MAGNUM_TARGET_WEBGL
 std::string AbstractShaderProgram::label() const {
-    #ifndef MAGNUM_TARGET_GLES
     return Context::current().state().debug->getLabelImplementation(GL_PROGRAM, _id);
-    #else
-    return Context::current().state().debug->getLabelImplementation(GL_PROGRAM_KHR, _id);
-    #endif
 }
 
 AbstractShaderProgram& AbstractShaderProgram::setLabelInternal(const Containers::ArrayView<const char> label) {
-    #ifndef MAGNUM_TARGET_GLES
     Context::current().state().debug->labelImplementation(GL_PROGRAM, _id, label);
-    #else
-    Context::current().state().debug->labelImplementation(GL_PROGRAM_KHR, _id, label);
-    #endif
     return *this;
 }
 #endif

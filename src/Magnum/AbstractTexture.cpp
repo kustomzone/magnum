@@ -1139,7 +1139,7 @@ void AbstractTexture::parameterIImplementationDefault(GLenum parameter, const GL
 }
 
 #ifdef MAGNUM_TARGET_GLES
-void AbstractTexture::parameterIImplementationDefault(GLenum parameter, const GLint* values) {
+void AbstractTexture::parameterIImplementationEXT(GLenum parameter, const GLint* values) {
     bindInternal();
     glTexParameterIivEXT(_target, parameter, values);
 }

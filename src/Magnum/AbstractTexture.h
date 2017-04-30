@@ -346,10 +346,11 @@ class MAGNUM_EXPORT AbstractTexture: public AbstractObject {
          * @brief Texture label
          *
          * The result is *not* cached, repeated queries will result in repeated
-         * OpenGL calls. If OpenGL 4.3 is not supported and neither
-         * @extension{KHR,debug} (covered also by @extension{ANDROID,extension_pack_es31a})
-         * nor @extension{EXT,debug_label} desktop or ES extension is
-         * available, this function returns empty string.
+         * OpenGL calls. If OpenGL 4.3 / OpenGL ES 3.2 is not supported and
+         * neither @extension{KHR,debug} (covered also by
+         * @extension{ANDROID,extension_pack_es31a}) nor @extension{EXT,debug_label}
+         * desktop or ES extension is available, this function returns empty
+         * string.
          * @see @fn_gl{GetObjectLabel} or
          *      @fn_gl_extension{GetObjectLabel,EXT,debug_label} with
          *      @def_gl{TEXTURE}
@@ -361,10 +362,10 @@ class MAGNUM_EXPORT AbstractTexture: public AbstractObject {
          * @brief Set texture label
          * @return Reference to self (for method chaining)
          *
-         * Default is empty string. If OpenGL 4.3 is not supported and neither
-         * @extension{KHR,debug} (covered also by @extension{ANDROID,extension_pack_es31a})
-         * nor @extension{EXT,debug_label} desktop or ES extension is
-         * available, this function does nothing.
+         * Default is empty string. If OpenGL 4.3 / OpenGL ES 3.2 is not
+         * supported and neither @extension{KHR,debug} (covered also by
+         * @extension{ANDROID,extension_pack_es31a}) nor @extension{EXT,debug_label}
+         * desktop or ES extension is available, this function does nothing.
          * @see @ref maxLabelLength(), @fn_gl{ObjectLabel} or
          *      @fn_gl_extension{LabelObject,EXT,debug_label} with
          *      @def_gl{TEXTURE}

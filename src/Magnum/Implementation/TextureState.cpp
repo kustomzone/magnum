@@ -222,7 +222,7 @@ TextureState::TextureState(Context& context, std::vector<std::string>& extension
     if(context.isVersionSupported(Version::GLES320)) {
         setBufferImplementation = &BufferTexture::setBufferImplementationDefault;
         setBufferRangeImplementation = &BufferTexture::setBufferRangeImplementationDefault;
-    } else if(context.isExtensionSupported<Extensions::GL::EXT::texture_border_clamp>()) {
+    } else if(context.isExtensionSupported<Extensions::GL::EXT::texture_buffer>()) {
         setBufferImplementation = &BufferTexture::setBufferImplementationEXT;
         setBufferRangeImplementation = &BufferTexture::setBufferRangeImplementationEXT;
     } else {
@@ -394,8 +394,8 @@ TextureState::TextureState(Context& context, std::vector<std::string>& extension
 
     if(context.isVersionSupported(Version::GLES320))
         storage3DMultisampleImplementation = &AbstractTexture::storageMultisampleImplementationDefault;
-    else if(context.isExtensionSupported<Extensions::GL::EXT::texture_border_clamp>())
-        storage3DMultisampleImplementation = &AbstractTexture::storageMultisampleImplementationEXT;
+    else if(context.isExtensionSupported<Extensions::GL::OES::texture_storage_multisample_2d_array>())
+        storage3DMultisampleImplementation = &AbstractTexture::storageMultisampleImplementationOES;
     else
         storage3DMultisampleImplementation = nullptr;
     #endif
