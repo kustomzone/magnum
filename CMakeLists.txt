@@ -26,8 +26,9 @@
 cmake_minimum_required(VERSION 2.8.12)
 
 # Configuration fails on < 3.4 if only C++ is enabled (CheckFunctionExists
-# macro called from FindX11)
-if(NOT CMAKE_VERSION VERSION_LESS 3.4.0)
+# macro called from FindX11). Also, Android needs C for compiling some glue
+# code.
+if(NOT CMAKE_VERSION VERSION_LESS 3.4.0 AND NOT CMAKE_SYSTEM_NAME STREQUAL "Android")
     set(LANG CXX)
 endif()
 project(Magnum ${LANG})
