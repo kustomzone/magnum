@@ -31,6 +31,10 @@
 
 #include "configure.h"
 
+#if defined(__has_include) && __has_include(<optional>)
+#include <optional> /* let's see how this all breaks horribly */
+#endif
+
 namespace Magnum { namespace Trade { namespace Test {
 
 class AbstractImporterTest: public TestSuite::Tester {
